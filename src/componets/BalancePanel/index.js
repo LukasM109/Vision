@@ -5,8 +5,10 @@ import {View, Text, StyleSheet} from 'react-native';
 const BalancePanelLabel = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Vision</Text>
-      <Text style={styles.value}>Onde você está?</Text>
+      <Text style={styles.label}>Para onde você quer ir?</Text>
+      <View />
+    <View />
+
     </View>
   );
 };
@@ -14,14 +16,16 @@ const BalancePanelLabel = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 10,
     alignItems: 'center',
   },
   label: {
-      fontSize: 18,
-  },
-  value: {
-      fontSize: 22,
-  },
+    fontSize: 35,
+    alignItems: 'center',
+},
+value: {
+    fontSize: 22,
+},
 });
 
 export default BalancePanelLabel;

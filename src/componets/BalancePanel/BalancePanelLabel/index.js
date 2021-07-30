@@ -5,8 +5,7 @@ import {View, Text, StyleSheet} from 'react-native';
 const BalancePanelLabel = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Vision</Text>
-      <Text style={styles.value}>Onde você está?</Text>
+      <Text style={styles.label}>Para onde você quer ir?</Text>
     </View>
   );
 };

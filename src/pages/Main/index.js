@@ -1,12 +1,23 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import BalancePanel from '../../componets/BalancePanel';
+import {View, StyleSheet, Button} from 'react-native';
+import BalanceLabel from '../../componets/BalanceLabel';
+import Colors from '../../styles/Colors';
 
-const Main = () => {
+const Main = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <BalancePanel />
+      <BalanceLabel />
+      <Button title="Bloco A" onPress={() => navigation.navigate('NewEntry')} />
+      <Button title="Bloco B" onPress={() => navigation.navigate('NewEntry')} />
+      <Button title="Bloco C" onPress={() => navigation.navigate('NewEntry')} />
+      <Button title="Bloco D" onPress={() => navigation.navigate('NewEntry')} />
+      <Button title="Bloco E" onPress={() => navigation.navigate('NewEntry')} />
+      <Button title="Bloco F" onPress={() => navigation.navigate('NewEntry')} />
+      <View>
+        <Button title="GPS" />
+        <Button title="Camera" />
+    </View>
     </View>
   );
 };
@@ -14,6 +25,7 @@ const Main = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.background,
     padding: 10,
   },
 });

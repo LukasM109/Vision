@@ -10,6 +10,7 @@ const BalancePanelChart = () => {
   );
 };
 
+// eslint-disable-next-line no-unused-vars
 const styles = StyleSheet.create({});
 
 export default BalancePanelChart;

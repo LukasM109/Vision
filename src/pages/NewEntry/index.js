@@ -1,12 +1,12 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {View, Button, StyleSheet} from 'react-native';
-import BalanceLabel from '../../componets/BalanceLabel';
+import BalancePanelLabel from '../../componets/BalancePanel';
 
 const NewEntry = () => {
   return (
     <View style={styles.container}>
-      <BalanceLabel />
+      <BalancePanelLabel />
       <View>
           <Button title="Bloco A" />
           <Button title="Bloco B" />
@@ -15,10 +15,6 @@ const NewEntry = () => {
           <Button title="Bloco E" />
           <Button title="Bloco F" />
       </View>
-    <View>
-        <Button title="GPS" />
-        <Button title="Camera" />
-    </View>
 
     </View>
   );
