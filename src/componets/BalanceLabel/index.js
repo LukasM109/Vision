@@ -4,23 +4,16 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const BalanceLabel = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.label}>Vision</Text>
-      <Text style={styles.value}>Onde você está?</Text>
+    <View>
+      <Text style={styles.label}>Balance Label</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    //padding espaçamento interno, margin espaçamento externo
     flex: 1,
-    alignItems: 'center',
-  },
-  label: {
-    fontSize: 40,
-  },
-  value: {
-    fontSize: 50,
   },
 });
 export default BalanceLabel;
