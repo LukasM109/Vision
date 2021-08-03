@@ -5,7 +5,7 @@ import {View, Text, StyleSheet} from 'react-native';
 const BalancePanelChart = () => {
   return (
     <View>
-      <Text />
+      <Text>Teste</Text>
     </View>
   );
 };

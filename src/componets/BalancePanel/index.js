@@ -16,12 +16,35 @@ const BalancePanel = ({onNewEntryPress}) => {
       <BalancePanelLabel />
     </LinearGradient>
     <TouchableOpacity style={styles.buttonA} onPress={onNewEntryPress}>
-      <Text>Bloco A</Text>
+      <Text style={styles.label}>Bloco A</Text>
     </TouchableOpacity>
     <View>
-      <TouchableOpacity style={styles.buttonB}>
-        <Text>Bloco B</Text>
+      <TouchableOpacity style={styles.buttonB} onPress={onNewEntryPress}>
+        <Text style={styles.label}>Bloco B</Text>
       </TouchableOpacity>
+    </View>
+    <View>
+      <TouchableOpacity style={styles.buttonC} onPress={onNewEntryPress}>
+        <Text style={styles.label}>Bloco C</Text>
+      </TouchableOpacity>
+    </View>
+    <View>
+      <TouchableOpacity style={styles.buttonD} onPress={onNewEntryPress}>
+        <Text style={styles.label}>Bloco D</Text>
+      </TouchableOpacity>
+    </View>
+    <View>
+      <TouchableOpacity style={styles.buttonE} onPress={onNewEntryPress}>
+        <Text style={styles.label}>Bloco E</Text>
+      </TouchableOpacity>
+    </View>
+    <View>
+      <TouchableOpacity style={styles.buttonF} onPress={onNewEntryPress}>
+        <Text style={styles.label}>Bloco F</Text>
+      </TouchableOpacity>
+    </View>
+    <View>
+      <BalancePanelAddressPicker />
     </View>
     <View>
       <BalancePanelAddressPicker />
@@ -34,44 +57,83 @@ const styles = StyleSheet.create({
   container: {
 
   },
+  label: {
+    fontSize: 26,
+  },
   panel: {
     paddingVertical: 10,
   },
   buttonA: {
-    backgroundColor: Colors.green,
-    width: 100,
-    height: 100,
+    backgroundColor: Colors.white,
+    width: 110,
+    height: 110,
     shadowColor: Colors.black,
     elevation: 5,
     borderRadius: 150,
     justifyContent: 'space-evenly',
     alignItems: 'center',
     marginTop: 15,
-    marginLeft: 15,
+    marginLeft: 30,
   },
   buttonB: {
-    backgroundColor: Colors.green,
-    width: 100,
-    height: 100,
+    backgroundColor: Colors.white,
+    width: 110,
+    height: 110,
     shadowColor: Colors.black,
     elevation: 5,
     borderRadius: 150,
     justifyContent: 'space-evenly',
     alignItems: 'center',
     marginTop: 25,
-    marginLeft: 15,
+    marginLeft: 30,
   },
-  buttonGPS: {
-    backgroundColor: Colors.green,
-    width: 100,
-    height: 100,
+  buttonC: {
+    backgroundColor: Colors.white,
+    width: 110,
+    height: 110,
     shadowColor: Colors.black,
     elevation: 5,
     borderRadius: 150,
     justifyContent: 'space-evenly',
     alignItems: 'center',
     marginTop: 25,
-    marginLeft: 15,
+    marginLeft: 30,
+  },
+  buttonD: {
+    backgroundColor: Colors.white,
+    width: 110,
+    height: 110,
+    shadowColor: Colors.black,
+    elevation: 5,
+    borderRadius: 150,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop: -377,
+    marginHorizontal: 270,
+  },
+  buttonE: {
+    backgroundColor: Colors.white,
+    width: 110,
+    height: 110,
+    shadowColor: Colors.black,
+    elevation: 5,
+    borderRadius: 150,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop: -245,
+    marginHorizontal: 270,
+  },
+  buttonF: {
+    backgroundColor: Colors.white,
+    width: 110,
+    height: 110,
+    shadowColor: Colors.black,
+    elevation: 5,
+    borderRadius: 150,
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop: -113,
+    marginHorizontal: 270,
   },
 });
 
